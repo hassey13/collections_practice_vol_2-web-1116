@@ -121,7 +121,7 @@ describe 'collections practice vol 2.' do
   end
 
   describe '#remove_non_strings' do
-    
+
     # Hint: Use the method "class"  "blake".class
 
     # Question 4
@@ -137,7 +137,8 @@ describe 'collections practice vol 2.' do
     # Question 5
 
     it 'count how many times something appears in an array' do
-      expect(count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
+          array = [{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
+      expect(count_elements(array)).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
     end
 
   end
